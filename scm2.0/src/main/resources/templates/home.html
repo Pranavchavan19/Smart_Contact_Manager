@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+   
+    <link rel="stylesheet" data-th-href="@{'/css/output.css'}" />
+
     <style>
         .container{
             margin: auto;
@@ -14,11 +17,11 @@
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="container text-2xl">
         <h1 data-th-text=${name}>Welcome to home </h1>
         <p> youtube channel : <span data-th-text=${chanel}></span></p>
-        <p> github details : <span data-th-text=${github}></span></p>
-        <a th:href="${github}"> click me </a>
+        <p> github details : <span th:text=${github}></span></p>
+        <a data-th-href="${github}"> click me </a>
         <P>
             jwdywdi  ehvfyurgf fhfoh
         </P>
